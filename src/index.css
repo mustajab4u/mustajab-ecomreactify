@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@layer components {
+    .gradText {
+        @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-purple-400;
+    }
+    .gradBg {
+        @apply bg-gradient-to-r from-teal-400 to-purple-400;
+    }
+    .transition1000 {
+        @apply transition-all duration-500 ease-in-out;
+    }
+    .gradBg {
+        @apply bg-gradient-to-br from-teal-400 to-purple-400;
+    }
+    .underlineImp {
+        @apply gradBg h-1 rounded-full mt-2;
+    }
+}
+@tailwind utilities;
+.bg {
+    background-color: #f1f5f9;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23000ef9' fill-opacity='0.01'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #444;
+}
